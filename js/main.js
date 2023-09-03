@@ -1,4 +1,4 @@
-import Task from "./task";
+import Task from "./task.js";
 
 let tasks = []; // array of tasks stored in localStorage
 
