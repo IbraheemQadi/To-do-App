@@ -1,0 +1,169 @@
+:root {
+  --backgroud: #403f4d;
+  --task-bg: #4e4e5c;
+  --input-bg: #2e2d34;
+  --text: #fff;
+
+  --ff-base: "Ubuntu", sans-serif;
+  --fw-bold: 700;
+  --fw-medium: 500;
+  --fw-regular: 400;
+  --fw-light: 300;
+
+  --border-radius: 1rem;
+}
+
+html {
+  /* 1 rem = 10px */
+  font-size: 62.5%;
+  scroll-behavior: smooth;
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+img,
+picture,
+svg,
+video {
+  max-width: 100%;
+  display: block;
+}
+
+body {
+  height: 100vh;
+  font-family: var(--ff-base);
+  font-size: 2rem;
+  line-height: 1.5;
+  color: var(--text);
+  background-color: var(--backgroud);
+}
+
+a {
+  text-decoration: none;
+}
+
+/* list */
+.list {
+  background: #505860;
+  padding: 1rem 1rem;
+  position: relative;
+  height: 100vh;
+}
+.date {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* input group */
+.input-group {
+  background: var(--input-bg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  margin-block: 1rem;
+}
+
+.input-group .input {
+  all: unset;
+  background: var(--input-bg);
+  flex-grow: 1;
+}
+
+.input-group .fa-plus {
+  color: #fff;
+  font-size: 2.5rem;
+}
+
+.input-group button {
+  background: 0;
+  border: 0;
+  outline: 0;
+}
+
+/* task */
+.task {
+  display: flex;
+  padding: 1rem;
+  justify-content: space-between;
+  align-items: center;
+  background: var(--task-bg);
+  margin-bottom: 0.5rem;
+  gap: 1.2rem;
+}
+
+.task-content {
+  overflow: hidden;
+  padding: 0.2rem;
+}
+
+.task-content:focus-visible {
+  outline: 0;
+  border-bottom: #ffffff 1px solid;
+}
+
+.task.completed .task-content {
+  text-decoration: line-through;
+  color: #a1a4aa;
+}
+
+.actions {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.actions > * {
+  padding: 0.5rem;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.actions .fa-x {
+  color: #e2675a;
+}
+
+.actions .fa-check {
+  color: #62dca5;
+}
+
+.actions .fa-rotate-left {
+  color: #f7f879;
+}
+
+/* new tasks */
+.new-tasks-container {
+  height: 70%;
+  overflow: auto;
+}
+
+/* footer */
+.footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 2rem;
+  position: absolute;
+  bottom: 0px;
+  width: calc(100% - 2rem);
+}
+
+@media (768px <= width) {
+  body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .list {
+    height: 95vh;
+    width: 35vw;
+  }
+}
+
+@media (768px <= width <= 1024px) {
+  .list {
+    width: 50vw;
+  }
+}
