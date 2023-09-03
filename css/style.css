@@ -51,7 +51,7 @@ a {
   background: #505860;
   padding: 1rem 1rem;
   position: relative;
-  height: 100vh;
+  height: 100dvh;
 }
 .date {
   display: flex;
