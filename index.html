@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/731b75a3c3.js"
+      crossorigin="anonymous"
+    ></script>
+    <title>To Do App</title>
+  </head>
+  <body>
+    <div class="list">
+      <header class="header date">
+        <div class="day-number">
+          <span class="number">24</span>
+          <span class="month">Feb</span>
+          <span class="year">2020</span>
+        </div>
+        <div class="day">Monday</div>
+      </header>
+      <div class="input-group">
+        <input
+          type="text"
+          class="input"
+          placeholder="Find or create a new tasks..."
+          data-input
+        />
+        <button data-addbtn class="btn">
+          <i class="icon fa-solid fa-plus"></i>
+        </button>
+      </div>
+      <div data-newtasks class="new-tasks-container"></div>
+      <footer class="footer">
+        <div data-tasks-count class="tasks-count"></div>
+        <div data-complete-count class="complete-count"></div>
+        <div data-open-count class="open-count"></div>
+      </footer>
+    </div>
+    <script type="module" src="js/main.js" defer></script>
+  </body>
+</html>
