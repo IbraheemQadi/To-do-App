@@ -4,7 +4,7 @@ A robust and user-friendly task management web application designed to enhance y
 
 ## Demo
 
-You can check out the app [here](https://ibraheemqadi.github.io/Portfolio/).
+You can check out the app [here](https://ibraheemqadi.github.io/To-do-App/).
 
 ## Built with
 
